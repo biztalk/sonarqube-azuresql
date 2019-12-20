@@ -140,7 +140,7 @@
     "SQvmAppImagePublisher": "MicrosoftWindowsServer",
     "SQvmAppImageOffer": "WindowsServer",
     "SQvmAppWindowsOSVersion": "2019-Datacenter",
-    "SQvmAppVmSize": "Standard_DS1_v2",
+    "SQvmAppVmSize": "Standard_D4s_v3",
     "SQvmAppSubnetRef": "[resourceId('Microsoft.Network/virtualNetworks/subnets', 'SQvnet', variables('SQvnetExternalSubnetName'))]",
     "SQvmAppNicName": "[concat(parameters('sqVM_AppName'), 'NetworkInterface')]",
     "SQpublicIPName": "SQpublicIP",
