@@ -2,15 +2,6 @@
 
 [Reference: SonarQube on Windows with Azure SQL Database](https://azure.microsoft.com/en-us/resources/templates/sonarqube-azuresql/)
 
-<IMG SRC="https://azurequickstartsservice.blob.core.windows.net/badges/sonarqube-azuresql/PublicLastTestDate.svg" />&nbsp;
-<IMG SRC="https://azurequickstartsservice.blob.core.windows.net/badges/sonarqube-azuresql/PublicDeployment.svg" />&nbsp;
-
-<IMG SRC="https://azurequickstartsservice.blob.core.windows.net/badges/sonarqube-azuresql/FairfaxLastTestDate.svg" />&nbsp;
-<IMG SRC="https://azurequickstartsservice.blob.core.windows.net/badges/sonarqube-azuresql/FairfaxDeployment.svg" />&nbsp;
-
-<IMG SRC="https://azurequickstartsservice.blob.core.windows.net/badges/sonarqube-azuresql/BestPracticeResult.svg" />&nbsp;
-<IMG SRC="https://azurequickstartsservice.blob.core.windows.net/badges/sonarqube-azuresql/CredScanResult.svg" />&nbsp;
-
 ## Version 1.0
 
 [![Deploy Button](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fbiztalk%2Fsonarqube-azuresql%2Fmaster%2Fazuredeploy.json)
