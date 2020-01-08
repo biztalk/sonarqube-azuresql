@@ -7,21 +7,21 @@
 [![Deploy Button](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fbiztalk%2Fsonarqube-azuresql%2Fmaster%2Fazuredeploy.json)
 [![Visualize button](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/visualizebutton.png)](http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Fbiztalk%2Fsonarqube-azuresql%2Fmaster%2Fazuredeploy.json)
 
-This template deploys an Azure SQL Server, Azure SQL DB, Windows Server 2012R2 VM (Standard DS1 v2) with SonarQube installed. This template can be deployed to a new resource group (recommended) or to an existing resource group.
+This template deploys an Azure SQL Server, Azure SQL DB, Windows Server 2019 VM (Standard_D4s_v3) with SonarQube 7.9 installed. This template can be deployed to a new resource group (recommended) or to an existing resource group.
 
-Once the deployment is complete you can increase the resources provided to SonarQube by changing the VM from a Standard DS1 v2 machine to any larger DS*x* v2 machine without the need to redeploy SonarQube or migrate any data.
+Once the deployment is complete you can increase the resources provided to SonarQube by changing the VM from a Standard D4s_v3 machine to any larger machine without the need to redeploy SonarQube or migrate any data.
 
 ---
 
 #### Note:
 
-This Beta release deploys a secure SonarQube installation by default, however we invoke a **self-signed** which you will have to replace with a trusted one for production use. **It is not recommended to run a production server with this certificate.**
+This deploys a secure SonarQube installation by default, however we invoke a **self-signed** which you will have to replace with a trusted one for production use. **It is not recommended to run a production server with this certificate.**
 
 Once the deployment finishes:
 
 - Please RDP to the machine
 - Download [OpenJDK 11](https://download.java.net/java/GA/jdk11/9/GPL/openjdk-11.0.2_windows-x64_bin.zip) from [Java.Net](https://jdk.java.net/archive/)
-- Install JDK
+- Install OpenJDK
 - Restart the SonarQube Service by Open “Services” and restart the server normally
 
 ##### Production Certificate
@@ -60,7 +60,7 @@ This template performs the following workflow to create the SonarQube installati
   3. Allow RDP through the Windows Firewall
   4. Allow SonarQube HTTP (80) Inbound through the Windows Firewall
   5. Allow SonarQube HTTPS (443) Inbound through the Windows Firewall
-  6. Download SonarQube 5.6.1 and unzip to staging folder
+  6. Download SonarQube 7.9.2 and unzip to staging folder
   7. Replace the SonarQube connection string with the connection string of the Azure SQL Server created earlier
   8. Install SonarQube as a Windows Service using the Local Admin account
   9. Start the SonarQube Windows Service and let it configure the SonarQube DB
